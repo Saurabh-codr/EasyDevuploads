@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML generators</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: 250;
+  padding-top: 20px;
+  margin-bottom: 130px;
+}
+a {
+  font-size: 150%;
+  margin-top: 30px;
+}
+
+a:click {
+  background: #FFB8B8;
+}
+
+
+input {
+  font-size: 150%;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+button {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  margin-top: 2rem;
+  background: linear-gradient(45deg, #FF8116,#FFBD16);
+  border: none;
+  overflow: hidden;
+  height: 7%;
+  width: 19%;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+  </style>
+</head>
+<body>
+
+  <script>
+var request = 0;
+var listDiv = (arr) => {
+  for (request; request < arr.length; request++) {
+    document.writeln(`
+ <a href="${arr[request]}" target="_blank"> n ${request + 1}
+  </a>   <input type="checkbox">
+  <br/>
+`)
+    if (request == arr.length - 1) {
+      document.writeln(`
+      <button onClick="window.location.reload();" style="text-align:center;">Reset Page</button>
+      `)
+    }
+  }
+} // function
+listDiv([
+  'https://devuploads.com/nntmt0ewffs4',
+  'https://devuploads.com/r8naxjnervqk',
+  'https://devuploads.com/9j9mm7qjzzdd',
+  'https://devuploads.com/fu7rkj5kkpu1',
+  'https://devuploads.com/9txa1ysx8hlg',
+  'https://devuploads.com/ug0lz09zcrp8',
+  'https://devuploads.com/7cv6bpuhgdch',
+  'https://devuploads.com/6ww638rx4qtc',
+  'https://devuploads.com/7i85e0iswg3r',
+  'https://devuploads.com/rdglf7zilrzw',
+  'https://devuploads.com/b0sq5nzr5kke',
+  'https://devuploads.com/ar1s2bver4jr',
+  'https://devuploads.com/v9wxhr1pe5i3',
+  'https://devuploads.com/6k7x3ewefpzm',
+  'https://devuploads.com/vjje1omaf2qf',
+  'https://devuploads.com/8t6mn3hdm3o1',
+  'https://devuploads.com/82n4jixwdyno',
+  'https://devuploads.com/gbzazozjw6cz',
+  'https://devuploads.com/q44twovqro0s',
+  'https://devuploads.com/1zouql33rmm9',
+   ]);
+  </script>
+</body>
+</html>
